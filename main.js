@@ -72,3 +72,13 @@ $('.left').click(
     }
 }
 );
+
+                        // BONUS
+// utente possa cliccare un pallino e attivare la foto corrispondente, senza seguire l'ordine sequenziale.
+
+
+$('.circle').click(
+    function(){
+    $("i").append();
+}
+)
