@@ -49,7 +49,7 @@ $('.left').click(
 // fate sì che il carousel funzioni con l'autoplay, ossia che automaticamente ogni 3 secondi cambi slide e venga visualizzata l'immagine successiva.
 
 // Inserisco un intervallo che permette di cambiare slide ogni 3 secondi
-setInterval(next_image,3000);
+//setInterval(next_image,3000);
 function next_image(){
     var  img_recuperata = $('img.visible');
     // console.log(img_recuperata);
@@ -83,15 +83,15 @@ function next_image(){
     }
 }
 // Dopo la creazione del pulsante play, bisogna far si che cliccando si attivi il timing
+var clock;
 $('#play').click(
     function() {
-    next_image();
+    clock = setInterval(next_image,3000);
 }
 );
 // Dopo la creazione del pulsante pause, bisogna far si che cliccando si disattivi il timing
-var clock = setInterval(next_image,3000);
 $('#pause').click(
     function(){
+    clearInterval(clock);
 }
-)
- clearInterval(clock);
+);

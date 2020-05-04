@@ -9,6 +9,7 @@
     display: flex;
     margin: auto;
     align-items: center;
+
 }
 .slider{
     width: 100%;
@@ -53,4 +54,18 @@
 }
 .circle i.active{
     color:red;
+}
+.button{
+    position: absolute;
+    bottom: 85px;
+    margin-left: 50px;
+}
+#play, #pause{
+    font-size: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border-radius: 27px;
+    margin-left: 17px;
+    background-color: lightgray;
 }
