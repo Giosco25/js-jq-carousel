@@ -72,3 +72,16 @@ $('.left').click(
     }
 }
 );
+
+
+// fate sì che il carousel funzioni con l'autoplay, ossia che automaticamente ogni 3 secondi cambi slide e venga visualizzata l'immagine successiva.
+
+// setTimeout(myFunction, 3000);
+// function myFunction() {
+// alert('Hello');
+$('.center').setTimeout(timing,3000);
+function timing(){
+       autoplay: true;
+       autoplayTimeout: 5000;
+       autoplaySpeed: 3000;
+}
